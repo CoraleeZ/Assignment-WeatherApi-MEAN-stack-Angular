@@ -1,0 +1,38 @@
+<div style="text-align: center">
+    <h1>{{weatherinfo.name}}</h1>
+    <div>
+        <div style='display: inline-block;width: 150px;margin-right: 200px;'>
+            <P>Humidity:{{weatherinfo.main.humidity}}</P>
+            <P>Temperature(Average):{{weatherinfo.main.temp}}</P>
+            <P>Temperature(High):{{weatherinfo.main.temp_max}}</P>
+            <P>Temperature(Low):{{weatherinfo.main.temp_min}}</P>
+            <P>Status:{{weatherinfo.weather[0].description}}</P>
+        </div>
+        <div style="display:inline-block;vertical-align: top">
+            <p *ngIf='weatherinfo.name=="Seattle"'>
+                <img style="display:inline-block;width:300px;vertical-align: top;" src="https://images.pexels.com/photos/23383/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="seattle">
+            </p>
+            <p *ngIf='weatherinfo.name=="San Jose"'>
+                <img style="display:inline-block;width:300px;vertical-align: top;" src="https://cache.radissonhotels.com/ow-cms/rad/images/hotels/CRSANJOS/NEW_PILOT/SJCR_98453840_Exterior_630.jpg" alt="sanjose">
+            </p>
+            <p *ngIf='weatherinfo.name=="Burbank"'>
+                <img style="display:inline-block;width:300px;vertical-align: top;" src="https://www.californiasecuritypro.com/hs-fs/hubfs/Home_Security_Systems_Burbank_Los_angeles_county_Security_Companies_in.jpg?width=1200&name=Home_Security_Systems_Burbank_Los_angeles_county_Security_Companies_in.jpg"
+                    alt="Burbank">
+            </p>
+
+            <p *ngIf='weatherinfo.name=="Dallas"'>
+                <img style="display:inline-block;widows: 300px;px;vertical-align: top;" src="https://media.bizj.us/view/img/10570270/dallas-skyline*750xx6720-3780-0-350.jpg" alt="Dallas">
+            </p>
+
+            <p *ngIf='weatherinfo.name=="Washington, D. C."'>
+                <img style="display:inline-block;width:300px;vertical-align: top;" src="https://kids.nationalgeographic.com/content/dam/kids/photos/States/O-W/washington-dc-capitol.ngsversion.1435610747994.adapt.1900.1.jpg" alt="DC">
+            </p>
+            <p *ngIf='weatherinfo.name=="Chicago"'>
+                <img style="display:inline-block;width:300px;vertical-align: top;" src="https://media.timeout.com/images/103969387/image.jpg" alt="Chicago">
+            </p>
+        </div>
+
+
+
+    </div>
+</div>
